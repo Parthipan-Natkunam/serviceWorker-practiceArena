@@ -11,9 +11,10 @@
     <script>
         if(navigator.serviceWorker){
             console.log("Service workers are supported in this browser..");
-            navigator.serviceWorker.register('/serviceWorker.js').then(()=>{
+            navigator.serviceWorker.register('/serviceWorker.js').then((registration)=>{
                 console.log("Service Worker registered successfully...");
-            }).catch(()=>{
+                console.log(`service worker's current scope: ${registration.scope}`);
+            }).catch((error)=>{
                 console.log("Failed to register serviceworker!");
             });
         }else{
