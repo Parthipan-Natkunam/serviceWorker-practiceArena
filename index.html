@@ -8,5 +8,17 @@
 </head>
 <body>
     <h3>ServiceWorkers - playArena</h3>
+    <script>
+        if(navigator.serviceWorker){
+            console.log("Service workers are supported in this browser..");
+            navigator.serviceWorker.register('/serviceWorker.js').then(()=>{
+                console.log("Service Worker registered successfully...");
+            }).catch(()=>{
+                console.log("Failed to register serviceworker!");
+            });
+        }else{
+            console.log("This browser doesn't support service workers...");
+        }
+    </script>
 </body>
 </html>
