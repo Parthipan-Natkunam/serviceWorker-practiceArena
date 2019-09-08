@@ -13,4 +13,5 @@ The folder contains practice code used for learninng serviceWorkers the hands-on
 
 ### Source(s):
 
-1. Going Offline -  By SitePoint
+1. Going Offline -  From SitePoint
+2. Create a Really Simple Offline Page - From deanhume.com
