@@ -10,6 +10,24 @@ Please be aware that my older learning repos may not adhere to this system, but 
 
 The folder contains practice code used for learninng serviceWorkers the hands-on way.
 
+### Serviceworker Lifecycle:
+
+#### New ServiceWorker:
+1. Download
+2. Install
+3. Activate
+
+#### Update Existing Serviceworker:
+1. Download
+2. Install
+3. Wait
+4. Activate
+
+### Serviceworker Requirement:
+1. Must be from the same origin.
+2. Domain should use a HTTPS protocol.
+
+
 ### Source(s):
 
 1. Going Offline -  From SitePoint
