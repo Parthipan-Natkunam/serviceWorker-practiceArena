@@ -1,4 +1,4 @@
-## ServiceWorkers-<img src="/img/logo.png">
+## ServiceWorkers <img src="/img/logo.png">
 
 Note:
 -----
