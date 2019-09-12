@@ -1,4 +1,4 @@
-const version = 'v1.0.2';
+const version = 'v1.0.4';
 // offline page url
 const offlinePage = 'offline.html';
 // static files cache
@@ -61,6 +61,9 @@ addEventListener('fetch',(ev)=>{
             caches.match(request).then((cachedImage)=>{
                 if(cachedImage){
                     return cachedImage;
+                }
+                if(request.url.includes('favicon.ico')){
+                    return caches.match('/favicon.png');
                 }
                 return fetch(request).then((response)=>{
                     const imageresponse = response.clone();
