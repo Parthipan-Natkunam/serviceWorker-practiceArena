@@ -7,6 +7,25 @@ html,body{
 
 /* body */
 body{
-    background: #333;
+    background: #fd5959;
     color: #fefefe;
+    padding: 10px;
+}
+
+/* header */
+.heading__conatiner{
+    text-align: center;
+    margin:10px 0;
+}
+
+.heading__conatiner > h3, .heading__conatiner > img {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.content__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
 }

@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.png' />
     <title>ServiceWorkers - playArena</title>
-    <!-- <link rel="stylesheet" href="/style.css"/> -->
+    <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
-    <h3>ServiceWorkers - playArena</h3>
+    <div class="heading__conatiner">
+        <h3>ServiceWorkers - </h3>
+        <img src="/img/logo.png" alt="logo"/>
+    </div>
+    <div class="content__container">
+        <div class="content__box">
+            <h5>Teen Titans</h5>
+            <img src="img/teentitans.jpg" alt="Teen Titans"/>
+        </div>
+        <div class="content__box">
+            <h5>Walking Dead</h5>
+            <img src="img/walkingDead.jpg" alt="Walking Dead" />
+        </div>
+    </div>
     <script>
         if(navigator.serviceWorker){
             console.log("Service workers are supported in this browser..");
