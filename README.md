@@ -1,4 +1,4 @@
-## ServiceWorkers-PlayArena
+## ServiceWorkers-<img src="/img/logo.png">
 
 Note:
 -----
