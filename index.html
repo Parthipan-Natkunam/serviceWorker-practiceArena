@@ -32,6 +32,11 @@
             }).catch((error)=>{
                 console.log("Failed to register serviceworker!");
             });
+            if(navigator.serviceWorker.controller){
+                window.addEventListener('load',()=>{
+                    navigator.serviceWorker.controller.postMessage('cleanUpCache');
+                });
+            }
         }else{
             console.log("This browser doesn't support service workers...");
         }
